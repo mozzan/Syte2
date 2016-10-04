@@ -314,6 +314,9 @@ h4,
 .icon.flickr:before {
   content: "\e900";
 }
+.icon.wordpress:before {
+  content: "\e899";
+}
 .icon.play-video {
   height: 50px;
   width: 50px;
