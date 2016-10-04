@@ -77,6 +77,8 @@ angular.module('clientApp')
             if (emptyResponses <= 2) {
               currentPage++;
               _getCheckins(cb);
+            } else if(currentPage === 3) {
+              cb();
             }
           }
         }).error(function(data) {

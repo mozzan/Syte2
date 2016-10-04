@@ -15,6 +15,7 @@ exports.monthActvity = function(page, cb) {
 
   dates.monthRange(page, function(start, end) {
     var cacheKey = 'instagram-' + moment(start).format('YYYY-MM-DD');
+
     if (page == 0) {
       //if it's the first month check if data needs to be updated
       exports.update(function(updated) {
@@ -96,7 +97,7 @@ exports.update = function(cb) {
             cb(false);
           });
         } else {
-          cb(false)
+          cb(false);
         }
       });
     } else {
