@@ -23,6 +23,7 @@ angular.module('clientApp')
           if (windowElement.scrollY + windowElement.innerHeight > streamElement.clientHeight - 200) {
             currentPage++;
             running = true;
+
             _getPosts(function() {
               if (!$scope.$$phase) {
                 $scope.$apply();
@@ -66,6 +67,8 @@ angular.module('clientApp')
             if (emptyResponses <= 2) {
               currentPage++;
               _getPosts(cb);
+            } else if(currentPage === 3) {
+              cb();
             }
           }
         }).error(function(data) {
