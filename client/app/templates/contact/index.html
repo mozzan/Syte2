@@ -1,0 +1,50 @@
+<div class="foursquare-page contact-page" id="contact-page" ng-class="{'animate-enter': animateEnter, 'visible': visible}">
+  <div class="contact-map-container">
+    <table>
+      <tbody>
+        <tr class="header">
+          <td colspan="2">
+            <h1> GET IN TOUCH </h1>
+          </td>
+        </tr>
+        <tr>
+          <td class="find-me">
+            <h2> FIND ME HERE </h2>
+          </td>
+          <td class="drop-me-header">
+            <div><h2> DROP ME A MAIL </h2></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="find-me">
+            <div class="checkin-stats">
+              <div class="foursquare-map">
+                <div id="contact-map" class="map"></div>
+              </div>
+            </div>
+          </td>
+          <td class="form-td">
+            <div class="send-form">
+              <form name="mailForm" ng-submit="send(mailForm)" class="pure-form">
+                <fieldset>
+                  <input type="text" name="subject" ng-model="subject" placeholder="Subject" />
+                  <input type="text" name="name" ng-model="name" placeholder="Name" />
+                  <input type="text" name="email" ng-model="email" placeholder="Email" />
+                  <textarea name="body" ng-model="body" placeholder="What to tell ?"></textarea>
+                </fieldset>
+                <button type="submit" class="pure-button pure-button-primary">Send</button>
+                <div><span id="send-mail-status">Success !!</span></div>
+              </form>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <img ng-src="images/line.png" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="loading-view" ng-class="{'hidden': visible }"><span>Loading...</span></div>

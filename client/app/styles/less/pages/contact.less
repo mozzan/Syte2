@@ -1,0 +1,125 @@
+
+.contact-page {
+  position: relative;
+  opacity: 0;
+  zoom: 1;
+
+  &.visible {
+    opacity: 1;
+  }
+
+  .contact-map-container {
+    h1 {
+      padding: 20px;
+    }
+    h2 {
+      padding: 20px;
+    }
+  }
+
+  .checkin-stats {
+    width: 100%;
+    padding: 20px 0 0 0;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .form-td {
+    position: relative;
+  }
+
+  .send-form {
+    color: #000;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    padding: 15px 0 0 20px;
+
+    input {
+      margin: 0 0 10px;
+      width: 400px;
+    }
+
+    textarea {
+      width: 400px;
+      height: 200px;
+    }
+
+    button {
+      font-weight: bold;
+      width: 100px;
+      margin-top: 10px;
+    }
+
+    div {
+      display: inline;
+      padding-left: 30px;
+    }
+
+    #send-mail-status {
+      display: none;
+      vertical-align: bottom;
+      font-size: 22px;
+
+      &.success {
+        color: #bdffd1;
+        display: inline;
+      }
+      &.error {
+        color: #ff8558;
+        display: inline;
+      }
+    }
+
+  }
+
+  .drop-me-header {
+    div {
+      padding: 0 0 0 50px;
+    }
+    h2 {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-page .send-form {
+    input {
+      width: 320px;
+    }
+    textarea {
+      width: 320px;
+    }
+  }
+  .contact-page {
+    .form-td {
+      height: 420px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-page .find-me {
+    display: none;
+  }
+  .contact-page .drop-me-header {
+    div {
+      padding: 0 0 0 20px;
+    }
+  }
+  .contact-page .send-form {
+    padding-left: 0;
+  }
+  .contact-page img {
+    padding: 0 0 0 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-page .contact-map-container h1 {
+    padding: 20px 0 0 20px;
+  }
+}

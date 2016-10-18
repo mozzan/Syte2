@@ -2,7 +2,7 @@
   width: 30px;
   height: 30px;
   display: inline-block;
-  position: relative;  
+  position: relative;
   overflow: visible;
   vertical-align: top;
   color: @link-color;
@@ -54,6 +54,14 @@
 
   &.flickr:before {
     content: "\e900";
+  }
+
+  &.wordpress:before {
+    content: "\e899";
+  }
+
+  &.contact:before {
+    content: "\e898";
   }
 
   &.play-video {
@@ -147,7 +155,7 @@
   width: 20px;
   height: 20px;
   display: inline-block;
-  position: relative;  
+  position: relative;
   overflow: visible;
   vertical-align: top;
   color: @text-color;
@@ -224,7 +232,7 @@
   &.play {
     font-size: 16px;
     text-indent: 3px;
-    
+
     &:before {
       content: "\e91b";
     }

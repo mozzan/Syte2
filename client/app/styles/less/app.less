@@ -3,6 +3,7 @@
 @import 'components/icons.less';
 @import 'components/modals.less';
 @import 'components/animations.less';
+@import 'components/pure.less';
 
 .main-body {
   width: 95%;
@@ -21,6 +22,7 @@
   hgroup a {
     display: block;
     color: @text-color;
+    position: relative;
   }
 
   .about-link {
@@ -51,12 +53,9 @@
     }
   }
 
-  h1 {
-    display: inline-block;
-    vertical-align: top;
-    line-height: 50px;
-    text-transform: uppercase;
-    position: relative;
+  .main-header .signature {
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -192,7 +191,7 @@
     width: 50px;
     height: auto;
 
-    h1 {
+    .signature {
       display: none;
     }
 
@@ -228,9 +227,11 @@
     height: 50px;
     background: rgba(24, 33, 37, 0.9);
 
-    h1 {
+    .signature {
       display: block;
-      text-align: center;
+      position: relative;
+      margin: 0 auto;
+      padding: 10px 0 0 0;
     }
 
     .picture {
@@ -342,7 +343,7 @@
   .main-header {
     margin-top: 0px;
 
-    h1 {
+    .singature {
       display: none;
     }
   }
@@ -357,3 +358,4 @@
 @import 'pages/tumblr.less';
 @import 'pages/foursquare.less';
 @import 'pages/lastfm.less';
+@import 'pages/contact.less';

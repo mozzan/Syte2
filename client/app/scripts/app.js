@@ -35,6 +35,14 @@ angular
         templateUrl: 'templates/github/index.html',
         controller: 'GithubCtrl'
       })
+      .when('/blog', {
+        templateUrl: 'templates/blog/index.html',
+        controller: 'BlogCtrl'
+      })
+      .when('/contact', {
+        templateUrl: 'templates/contact/index.html',
+        controller: 'ContactCtrl'
+      })
       .when('/tumblr', {
         templateUrl: 'templates/tumblr/index.html',
         controller: 'TumblrCtrl'

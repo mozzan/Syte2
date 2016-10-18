@@ -19,6 +19,7 @@
     "morgan": "~1.6.1",
     "request": "^2.72.0",
     "serve-favicon": "~2.3.0",
-    "twitter": "^1.2.5"
+    "twitter": "^1.2.5",
+    "nodemailer": "2.6.4"
   }
 }

@@ -38,4 +38,6 @@ if (process.env.YOUTUBE_INTEGRATION_DISABLED != 'true') {
   router.use('/youtube', require('./youtube'));
 }
 
+router.use('/contact', require('./contact'));
+
 module.exports = router;

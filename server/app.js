@@ -19,7 +19,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(require('./controllers'))
+app.use(require('./controllers'));
 
 app.set('mongodbURL', process.env.MONGODB_URI);
 
@@ -58,7 +58,7 @@ if (app.get('env') === 'production') {
 db.connect(app.settings.mongodbURL, function(err) {
   if (err) {
     console.log('Unable to connect to Mongo.');
-    process.exit(1)
+    process.exit(1);
   } else {
     console.log('Connected to Mongo.', app.get('env'));
     server.listen(port);
