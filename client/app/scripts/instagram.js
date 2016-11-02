@@ -67,7 +67,7 @@ angular.module('clientApp')
             if (emptyResponses <= 2) {
               currentPage++;
               _getPosts(cb);
-            } else if(currentPage === 3) {
+            } else if(currentPage >= 3) {
               cb();
             }
           }
