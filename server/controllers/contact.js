@@ -25,7 +25,7 @@ router.post('/sendmail', function(req, res) {
     from: req.body.email,
     to: 'linch0520@gmail.com',
     cc: req.body.email,
-    subject: req.body.subject,
+    subject: "[Mozzan.com]" + req.body.subject,
     text: req.body.body
   };
   Contact.sendMail(mailOptions, function(error, info) {
