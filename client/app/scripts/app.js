@@ -39,6 +39,10 @@ angular
         templateUrl: 'templates/blog/index.html',
         controller: 'BlogCtrl'
       })
+      .when('/post/:postId', {
+        templateUrl: 'templates/blog/index.html',
+        controller: 'BlogViewPostCtrl'
+      })
       .when('/contact', {
         templateUrl: 'templates/contact/index.html',
         controller: 'ContactCtrl'
@@ -47,10 +51,10 @@ angular
         templateUrl: 'templates/tumblr/index.html',
         controller: 'TumblrCtrl'
       })
-      .when('/post/:postId', {
+      /*.when('/post/:postId', {
         templateUrl: 'templates/tumblr/index.html',
         controller: 'TumblrViewPostCtrl'
-      })
+      })*/
       .when('/foursquare', {
         templateUrl: 'templates/foursquare/index.html',
         controller: 'FoursquareCtrl'

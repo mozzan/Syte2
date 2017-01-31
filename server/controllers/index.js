@@ -39,5 +39,6 @@ if (process.env.YOUTUBE_INTEGRATION_DISABLED != 'true') {
 }
 
 router.use('/contact', require('./contact'));
+router.use('/blog', require('./blog'));
 
 module.exports = router;
